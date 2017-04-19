@@ -1,0 +1,19 @@
+<h1>Make a New Request</h1>
+
+<label for="id"> Select Cats
+  <select id="id" name="id" >
+    <option selected disabled>--Select Cat--</option>
+    <% @all_cats.each do |cat| %>
+    <option value="<%= cat.id %>"> <%= cat.name %> </option>
+    <% end %>
+  </select>
+</label>
+
+
+<label for="start_date"> Start Date
+  <input id="start_date" type="date">
+</label>
+
+<label for="end_date"> End Date
+  <input id="end_date" type="date">
+</label>
